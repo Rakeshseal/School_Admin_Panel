@@ -5,10 +5,12 @@
 }
 
 .mani-cont {
+  overflow: hidden;
   height: 100vh;
   background-color: #2C3D4D;
   /*********Left Section********/
   /******Right Section**********/
+  /*Add_student HTML Style*/
 }
 .mani-cont .left_sec {
   height: 100%;
@@ -66,8 +68,8 @@
   font-size: 14px;
   display: none;
 }
-.mani-cont .left_sec .item_gap_map {
-  width: 75%;
+.mani-cont .left_sec .item_gap_student {
+  width: 22%;
 }
 .mani-cont .left_sec .arrow-up5 {
   display: none;
@@ -95,6 +97,7 @@
   height: 100%;
 }
 .mani-cont .right_sec {
+  position: static;
   right: 0;
   height: 100%;
   width: 80%;
@@ -142,11 +145,50 @@
 .mani-cont .right_sec .inner_sec {
   color: rgba(146, 151, 155, 0.4745098039);
 }
+.mani-cont .right_sec .inner_sec section {
+  gap: 30px;
+}
 .mani-cont .right_sec .inner_sec p {
   color: #fff;
 }
 .mani-cont .right_sec .inner_sec .card {
+  cursor: pointer;
   width: 20%;
   height: 40vh;
   background-color: rgba(255, 255, 255, 0.274);
+  transition: transform 0.1s;
+}
+.mani-cont .right_sec .inner_sec .card:hover {
+  transform: scale(1.06);
+}
+.mani-cont .Add_student_form {
+  color: #fff;
+  width: 100%;
+  height: auto;
+}
+.mani-cont .Add_student_form .StudentClass {
+  width: 20%;
+}
+.mani-cont .Add_student_form .add_submit_btn {
+  width: 100px;
+}
+.mani-cont .Add_student_form .image_upload {
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(126, 126, 126);
+  cursor: pointer;
+}
+.mani-cont .Add_student_form input {
+  width: 50%;
+  height: 40px;
+  color: #263442;
+}
+.mani-cont .Add_student_form img {
+  width: 120px;
+  height: 120px;
+  border: 4px solid #fff;
+  outline: none;
 }/*# sourceMappingURL=admin.css.map */

@@ -5,10 +5,12 @@
 }
 
 .mani-cont{
+    overflow: hidden;
     height: 100vh;
     background-color: #2C3D4D;
   /*********Left Section********/
     .left_sec{
+        
         height: 100%;
         width: 20%;
         color: #fff;
@@ -68,13 +70,13 @@
             display: none;
         }
 
-        //Maps items
+        //Student Management items
         .item_li5{
             font-size: 14px;
             display: none;
         }
-        .item_gap_map{
-            width: 75%;
+        .item_gap_student{
+            width: 22%;
         }
         .arrow-up5{
             display: none;
@@ -109,6 +111,7 @@
 
    /******Right Section**********/
     .right_sec{
+        position: static;
         right: 0;
         height: 100%;
         width: 80%;
@@ -153,16 +156,60 @@
             font-weight: 500;
         }
         .inner_sec{
+           section{
+            gap: 30px;
+           }
             color: #92979b79;
             p{
                 color: #fff;
             }
+            
             .card{
+                cursor: pointer;
                 width: 20%;
                 height: 40vh;
                 background-color: rgba(255, 255, 255, 0.274);
+                transition: transform 0.1s;
+            }
+            .card:hover{
+                transform: scale(1.06);
             }
         }
 
+    }
+
+
+    /*Add_student HTML Style*/
+
+    .Add_student_form{
+        color: #fff;
+        width: 100%;
+        height: auto;
+        .StudentClass{
+            width: 20%;
+        }
+        .add_submit_btn{
+            width: 100px;
+        }
+        .image_upload{
+            width: 120px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: rgb(126, 126, 126);
+            cursor: pointer;
+        }
+        input{
+            width: 50%;
+            height: 40px;
+            color: #263442;
+        }
+        img{
+            width: 120px;
+            height: 120px;
+            border: 4px solid #fff;
+            outline: none;
+        }
     }
 }

@@ -25,7 +25,7 @@
            <div class="container-fluid left-nav">
              <div class="container h-auto">
                  <!--LOGO-->
-                 <a href="" style="text-decoration: none; color:#fff;"><h1 class="logo py-3">LOGO</h1></a>
+                <a href="./admin.html" style="text-decoration: none; color:#fff;"><h1 class="logo py-3">LOGO</h1></a>
              </div>
            </div>
          <!--Left Navigation End-->
@@ -192,7 +192,7 @@
 
                 <!--Sign up-->
                 <a href="./signup.html" class="signup"><p>Sign up</p></a>
-
+                   
                 
                </section>
             </div>
@@ -202,11 +202,45 @@
 
         <!--Inner Section Start-->
         <div class="container-fluid inner_sec px-3 py-3">
-            <h3>Dashboard</h3>
-            <p class="py-2">Teachers</p>
-            <div class="card my-5">
-              
-            </div>
+            <h4 style="color: rgb(172, 172, 172);">Add Student</h4>
+
+            <!--Add student Form Start-->
+             <form class="Add_student_form">
+                <!--Student Name-->
+                <label for="name">Student Name</label><br>
+                <input class="px-1" type="text" name="name" placeholder="Enter The Student Name"/><br><br>
+
+                <!--Email Address-->
+                <label for="email">Student Email Address</label><br>
+                <input class="px-1" type="email" name="email" placeholder="Enter The Student Email Id"/><br><br>
+
+                <!--Class-->
+                <label for="class">Student Class</label><br>
+                <input class="px-1 StudentClass" type="number" name="class"/><br><br>
+
+                <!--Section-->
+                <label for="section">Student Section</label><br>
+                <input class="px-1 StudentClass" type="text" name="section"/><br><br>
+
+                <!--Roll No.-->
+                <label for="roll">Student Roll Number</label><br>
+                <input class="px-1 StudentClass" type="number" name="roll"/><br><br>
+
+
+                <!--Image Upload Start-->
+
+                 <section class="d-flex" style="gap: 10px;">
+                    <img src="./img/student_icon.webp" id="student-img"/>
+                 <section class="d-flex flex-column" style="gap: 10px;">
+                    <label class="image_upload text-center" for="input-file">Upload Image</label>
+                 <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file"/>
+                 </section>
+                 </section>
+                <!--Image Uplosd End-->
+
+                <input class="add_submit_btn py-1 my-2" type="submit" value="Submit" style="color: #172029;"/>
+             </form>
+            <!--Add student Form End-->
         </div>
 
         <!--Inner Section End-->

@@ -121,5 +121,17 @@ $( document ).ready(function(e) {
   /*left Menu Button Operation End*/
 
 
+
+  /*Student Image Upload Function Start*/
+  let studentImg = document.getElementById("student-img");
+  let inputFile = document.getElementById("input-file");
+
+  inputFile.onchange = function(){
+    studentImg.src = URL.createObjectURL(inputFile.files[0]);
+  }
+
+  /*Student Image Upload Function End*/
+
+
  
 });
