@@ -247,7 +247,7 @@
   height: 40px;
 }
 
-/******Student Information style Start********/
+/******Student View Section style Start********/
 .student_table {
   color: #fff;
   width: 100%;
@@ -329,7 +329,10 @@
   outline: none;
   background-color: rgb(104, 104, 104);
 }
-.student_table .sub_tr_1, .student_table .sub_tr_2, .student_table .sub_tr_3 {
+.student_table .sub_tr_3 {
+  display: none;
+}
+.student_table .sub_tr_1, .student_table .sub_tr_2 {
   display: none;
 }
 .student_table .sub_tr_1 img, .student_table .sub_tr_2 img, .student_table .sub_tr_3 img {
@@ -337,7 +340,7 @@
   height: 50px;
 }
 
-/******Student Information style End*********/
+/******Student View Section style End*********/
 /*****************Responsive CSS STYLE start****************/
 @media (max-width: 990px) {
   .mani-cont .right_sec .inner_sec section {
