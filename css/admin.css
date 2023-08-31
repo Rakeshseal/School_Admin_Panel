@@ -181,10 +181,27 @@
   background-color: rgb(126, 126, 126);
   cursor: pointer;
 }
+.mani-cont .Add_student_form .add_submit_btn {
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.mani-cont .Add_student_form #input-file {
+  border: none;
+  outline: none;
+}
 .mani-cont .Add_student_form input {
+  margin-top: 2px;
   width: 50%;
   height: 40px;
-  color: #263442;
+  color: #fff;
+  outline: none;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: transparent;
 }
 .mani-cont .Add_student_form img {
   width: 120px;
@@ -193,8 +210,108 @@
   outline: none;
 }
 
+/******Student Information style Start********/
+.student_table {
+  color: #fff;
+  width: 100%;
+  height: auto;
+}
+.student_table .class_ul {
+  display: none;
+  padding: 0;
+  width: 16%;
+  height: auto;
+  border: none;
+  outline: none;
+  background-color: rgba(129, 129, 129, 0.541);
+}
+.student_table .class_ul .class_li {
+  height: 0px;
+  border: 1px solid #fff;
+  list-style: none;
+  cursor: pointer;
+}
+.student_table .class_ul .class_li p {
+  text-align: center;
+}
+.student_table .class_ul .class_li:hover {
+  background-color: #fff;
+}
+.student_table .class_ul .class_li:hover p {
+  color: #263442;
+}
+.student_table .Sec_ul {
+  margin-top: 11px;
+  display: none;
+  padding: 0;
+  width: 28%;
+  height: auto;
+  border: none;
+  outline: none;
+  background-color: rgba(129, 129, 129, 0.541);
+}
+.student_table .Sec_ul .Sec_li {
+  height: 0px;
+  border: 1px solid #fff;
+  list-style: none;
+  cursor: pointer;
+}
+.student_table .Sec_ul .Sec_li p {
+  text-align: center;
+}
+.student_table .Sec_ul .Sec_li:hover {
+  background-color: #fff;
+}
+.student_table .Sec_ul .Sec_li:hover p {
+  color: #263442;
+}
+.student_table .table_ex {
+  border: none;
+  outline: none;
+}
+.student_table th {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.student_table td {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.student_table .infoClassArrowDwn, .student_table .infoSecArrowDwn {
+  display: none;
+}
+.student_table .LnA {
+  display: none;
+}
+.student_table img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: rgb(104, 104, 104);
+}
+.student_table .sub_tr_1, .student_table .sub_tr_2, .student_table .sub_tr_3 {
+  display: none;
+}
+.student_table .sub_tr_1 img, .student_table .sub_tr_2 img, .student_table .sub_tr_3 img {
+  width: 50px;
+  height: 50px;
+}
+
+/******Student Information style End*********/
 /*****************Responsive CSS STYLE start****************/
 @media (max-width: 990px) {
+  .mani-cont .right_sec .inner_sec section {
+    gap: 7px;
+  }
+  .student_table th {
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    font-size: 11px;
+  }
   .mani-cont .Add_student_form input {
     width: 96%;
     height: 40px;
