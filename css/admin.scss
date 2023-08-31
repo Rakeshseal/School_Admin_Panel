@@ -231,9 +231,45 @@
             outline: none;
         }
     }
-
-
+  
+    /*********NOTIFICATION SECTION START********/
+   .notice_table{
+    border: none;
+    outline: none;
+    color: #fff;
+      width: 100%;
+      height: auto;
+      tr, td, th{
+        border: 1px solid #fff;
+      }
+      .not_upload{
+        width: 200px;
+        background-color: rgb(0, 146, 0);
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+      .not_view{
+        width: 200px;
+        background-color: rgb(58, 58, 58);
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+      .not_cancel{
+        width: 200px;
+        background-color: rgb(253, 69, 69);
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+      td{
+        background-color: #1a242e;
+        height: 40px;
+      }
+   }
     
+   /********NOTIFICATION SECTION END**********/
 }
 
 /******Student Information style Start********/
