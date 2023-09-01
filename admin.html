@@ -18,7 +18,7 @@
     <!--********Left********-->
 
         <!--Left Section Start-->
-      <div class="container-fluid left_sec gx-0 position-absolute">
+      <div class="container-fluid left_sec gx-0">
          <!--Left Navigation Start-->
            <div class="container-fluid left-nav">
              <div class="container h-auto">
@@ -171,17 +171,19 @@
        <div class="container-fluid right_sec gx-0 position-absolute">
         <!--Right Navigation Start-->
           <div class="container-fluid right-nav">
-            <div class="container d-flex align-items-center h-auto position-relative">
-                <!--User Image-->
+            <div class="container-fluid d-flex align-items-center h-auto position-relative nav-cont">
+                <!--User Image Upload Section Start-->
                <div class="user_det d-flex py-3 align-items-center">
-                 <img class="user_img rounded-circle" src="./img/user_full_image.png"/>
+                 <img class="user_img rounded-circle" id="user_image" src="./img/user_full_image.png"/>
                  
                     <div>
-                        <h6 class="text-light px-3">WELCOME ADMIN</h6>
-                        <p class="text-light px-3">subject</p>
+                        <h6 class="text-light px-3 admin_name">WELCOME ADMIN</h6>
+                        <label class="user_img_upload text-center" for="user-input"><p class="admin_subject">Upload Image</p></label>
+                 <input type="file" accept="image/jpeg, image/png, image/jpg" id="user-input"/>
                     </div>
                </div>
-               <section class="right_op position-absolute d-flex">
+               <!--User Image Upload Section End-->
+               <section class="right_op d-flex">
                 <!--Notice Alert Icon-->
                 <a href=""><img class="alert_icon" src="./img/bell_icon.png"/></a>
 

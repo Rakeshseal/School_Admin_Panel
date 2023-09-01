@@ -18,7 +18,7 @@
     <!--********Left********-->
 
         <!--Left Section Start-->
-      <div class="container-fluid left_sec gx-0 position-absolute">
+      <div class="container-fluid left_sec gx-0">
          <!--Left Navigation Start-->
            <div class="container-fluid left-nav">
              <div class="container h-auto">
@@ -170,17 +170,19 @@
        <div class="container-fluid right_sec gx-0 position-absolute">
         <!--Right Navigation Start-->
           <div class="container-fluid right-nav">
-            <div class="container d-flex align-items-center h-auto position-relative">
-                <!--User Image-->
+            <div class="container-fluid d-flex align-items-center h-auto position-relative nav-cont">
+                <!--User Image Upload Section Start-->
                <div class="user_det d-flex py-3 align-items-center">
-                 <img class="user_img rounded-circle" src="./img/user_full_image.png"/>
-                 
-                    <div>
-                        <h6 class="text-light px-3">WELCOME ADMIN</h6>
-                        <p class="text-light px-3">subject</p>
-                    </div>
-               </div>
-               <section class="right_op position-absolute d-flex">
+                <img class="user_img rounded-circle" id="user_image" src="./img/user_full_image.png"/>
+                
+                   <div>
+                       <h6 class="text-light px-3 admin_name">WELCOME ADMIN</h6>
+                       <label class="user_img_upload text-center" for="user-input"><p class="admin_subject">Upload Image</p></label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="user-input"/>
+                   </div>
+              </div>
+              <!--User Image Upload Section End-->
+               <section class="right_op d-flex">
                 <!--Notice Alert Icon-->
                 <a href=""><img class="alert_icon" src="./img/bell_icon.png"/></a>
 
@@ -213,7 +215,23 @@
 
                 <!--Class-->
                 <label for="class">Student Class</label><br>
-                <input class="px-1 StudentClass" type="number" name="class"/><br><br>
+                <select name="class" class="px-1 StudentClass" id="class">
+                    <option value="Lower Nursery">Lower Nursery</option>
+                    <option value="Upper Nursery">Upper Nursery</option>
+                    <option value="KG">KG</option>
+                    <option value="class-1">1</option>
+                    <option value="Class-2">2</option>
+                    <option value="Class-3">3</option>
+                    <option value="Class-4">4</option>
+                    <option value="Class-5">5</option>
+                    <option value="class-6">6</option>
+                    <option value="Class-7">7</option>
+                    <option value="Class-8">8</option>
+                    <option value="Class-9">9</option>
+                    <option value="Class-10">10</option>
+                    <option value="Class-10">11</option>
+                    <option value="Class-10">12</option>
+                  </select><br><br>
 
                 <!--Section-->
                 <label for="section">Student Section</label><br>
@@ -221,7 +239,23 @@
 
                 <!--Roll No.-->
                 <label for="roll">Student Roll Number</label><br>
-                <input class="px-1 StudentClass" type="number" name="roll"/><br><br>
+                <select name="class" class="px-1 StudentClass" id="class">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                  </select><br><br>
 
 
                 <!--Image Upload Start-->

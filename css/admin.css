@@ -4,17 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #2C3D4D;
+}
+
 .mani-cont {
-  overflow: hidden;
   height: 100vh;
   background-color: #2C3D4D;
   /*********Left Section********/
   /******Right Section**********/
-  /*Add_student Section HTML Style*/
+  /*Add_student Section css Style Start*/
+  /*Add_student Section css Style End*/
   /*********NOTIFICATION SECTION START********/
   /********NOTIFICATION SECTION END**********/
 }
 .mani-cont .left_sec {
+  position: fixed;
   height: 100%;
   width: 20%;
   color: #fff;
@@ -99,23 +104,36 @@
   height: 100%;
 }
 .mani-cont .right_sec {
-  position: static;
   right: 0;
-  height: 100%;
+  height: auto;
   width: 80%;
   background-color: #2C3D4D;
 }
 .mani-cont .right_sec .right-nav {
+  position: fixed;
+  z-index: 1;
   height: 80px;
-  background-color: rgba(33, 48, 63, 0.4745098039);
+  background-color: #21303f;
+}
+.mani-cont .right_sec .right-nav .nav-cont {
+  gap: 40%;
 }
 .mani-cont .right_sec .right-nav .logo {
   color: #fff;
 }
 .mani-cont .right_sec .right-nav .user_img {
   width: 45px;
+  height: 45px;
   margin-top: -20px;
   border: 3px solid rgb(219, 219, 219);
+}
+.mani-cont .right_sec .right-nav #user-input {
+  display: none;
+}
+.mani-cont .right_sec .right-nav .admin_subject {
+  color: #fff;
+  padding-left: 20px;
+  cursor: pointer;
 }
 .mani-cont .right_sec .right_op {
   right: 2%;
@@ -145,6 +163,8 @@
   font-weight: 500;
 }
 .mani-cont .right_sec .inner_sec {
+  position: absolute;
+  top: 80px;
   color: rgba(146, 151, 155, 0.4745098039);
 }
 .mani-cont .right_sec .inner_sec section {
@@ -167,6 +187,21 @@
   color: #fff;
   width: 100%;
   height: auto;
+}
+.mani-cont .Add_student_form select {
+  border-radius: 0;
+  margin-top: 2px;
+  height: 40px;
+  color: #fff;
+  outline: none;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: transparent;
+}
+.mani-cont .Add_student_form select option {
+  color: #0e0e0e;
 }
 .mani-cont .Add_student_form .StudentClass {
   width: 20%;
@@ -267,9 +302,11 @@
   border: 1px solid #fff;
   list-style: none;
   cursor: pointer;
+  background-color: #151d24;
 }
 .student_table .class_ul .class_li p {
   text-align: center;
+  color: #fff;
 }
 .student_table .class_ul .class_li:hover {
   background-color: #fff;
@@ -291,10 +328,12 @@
   height: 0px;
   border: 1px solid #fff;
   list-style: none;
+  background-color: #151d24;
   cursor: pointer;
 }
 .student_table .Sec_ul .Sec_li p {
   text-align: center;
+  color: #fff;
 }
 .student_table .Sec_ul .Sec_li:hover {
   background-color: #fff;
@@ -332,17 +371,113 @@
 .student_table .sub_tr_3 {
   display: none;
 }
-.student_table .sub_tr_1, .student_table .sub_tr_2 {
+.student_table .sub_tr_1, .student_table .sub_tr_2, .student_table .sub_tr_1_1, .student_table .sub_tr_1_2, .student_table .sub_tr_2_1, .student_table .sub_tr_3_1 {
   display: none;
 }
-.student_table .sub_tr_1 img, .student_table .sub_tr_2 img, .student_table .sub_tr_3 img {
-  width: 50px;
-  height: 50px;
+.student_table .sub_tr_1, .student_table .sub_tr_2, .student_table .sub_tr_3, .student_table .sub_tr_1_1, .student_table .sub_tr_1_2, .student_table .sub_tr_2_1, .student_table .sub_tr_3_1 {
+  text-align: center;
+}
+.student_table .sub_tr_1 img, .student_table .sub_tr_2 img, .student_table .sub_tr_3 img, .student_table .sub_tr_1_1 img, .student_table .sub_tr_1_2 img, .student_table .sub_tr_2_1 img, .student_table .sub_tr_3_1 img {
+  width: 67px;
+  height: 67px;
 }
 
 /******Student View Section style End*********/
+/******* Sign Button Page css start*******/
+.signin_cont {
+  height: 100vh;
+}
+.signin_cont .button_section {
+  width: 60%;
+  gap: 20px;
+}
+.signin_cont .signin {
+  background-color: #0e0e0e;
+  color: #fff;
+  transition: transform 0.1s;
+}
+.signin_cont .signin:hover {
+  transform: scale(1.06);
+}
+.signin_cont .signup {
+  transition: transform 0.1s;
+}
+.signin_cont .signup:hover {
+  transform: scale(1.06);
+}
+.signin_cont button {
+  width: 120px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  text-align: center;
+}
+
+/******* Sign button page css End *******/
+/********* Sign in / sign up css section Start**********/
+.signin_cont {
+  height: 100vh;
+}
+
+.signin_cont form {
+  width: 50%;
+  height: auto;
+  border-radius: 7px;
+  gap: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.377);
+}
+
+.signin_cont form input {
+  width: 60%;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  background-color: #fff;
+  color: #1d1d1d;
+}
+
+.signin_cont form .signin_btn {
+  background-color: black;
+  color: #fff;
+  font-size: 21px;
+  text-align: center;
+}
+
+/*Responsive*/
+@media (max-width: 999px) {
+  .signin_cont form {
+    width: 90%;
+    height: auto;
+    border-radius: 7px;
+    gap: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.377);
+  }
+  .signin_cont form input {
+    width: 88%;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background-color: #fff;
+    color: #1d1d1d;
+  }
+}
+/*********SignIn / Sign up section End**********/
 /*****************Responsive CSS STYLE start****************/
 @media (max-width: 990px) {
+  .admin_name {
+    font-size: 13px;
+  }
+  .admin_subject {
+    font-size: 11px;
+    color: #fff;
+  }
   .mani-cont .right_sec .inner_sec section {
     gap: 7px;
   }
