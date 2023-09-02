@@ -66,9 +66,7 @@
                     </div>
                     <div class="item_li2">
                         <div class="d-flex flex-column">
-                            <p>upload form 1</p>
-                            <p>upload form 2</p>
-                            <p>upload form 3</p>
+                            <a href="" class="nav-link text-light"><p>upload form</p></a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +83,11 @@
                     </div>
                     <div class="item_li3">
                         <div class="d-flex flex-column">
-                            <a href="./notice.html" style="text-decoration: none; color:#fff;"><p>upload school notice</p></a>
+                            <a href="./notice.html" style="text-decoration: none; color:#fff;"><p>upload notice</p></a>
+
+                            <a href="./notice_view.html" style="text-decoration: none; color:#fff;"><p>view notice</p></a>
+
+                            
                             
                         </div>
                     </div>
@@ -203,130 +205,47 @@
         <!--Inner Section Start-->
         <div class="container-fluid inner_sec px-3 py-3">
             <h3>Dashboard</h3>
-            <p class="py-2">Notice</p>
-            <table class="notice_table">
-                <tr>
-                   <th class="text-center">Class</th>
-                   <th class="text-center">Notice</th>
-                   
-                </tr>
+            <p class="py-2">Notice Upload</p>
+            
+            <!--Notice Form Upload Section Start-->
+             <form class="notice_upForm">
+                 <!--Class Selectior-->
+                 <label class="py-3 text-light" for="class">Student Class</label><br>
+                <select name="class" class="px-1 StudentClass" id="class">
+                    <option value="Lower Nursery">Lower Nursery</option>
+                    <option value="Upper Nursery">Upper Nursery</option>
+                    <option value="KG">KG</option>
+                    <option value="class-1">1</option>
+                    <option value="Class-2">2</option>
+                    <option value="Class-3">3</option>
+                    <option value="Class-4">4</option>
+                    <option value="Class-5">5</option>
+                    <option value="class-6">6</option>
+                    <option value="Class-7">7</option>
+                    <option value="Class-8">8</option>
+                    <option value="Class-9">9</option>
+                    <option value="Class-10">10</option>
+                    <option value="Class-10">11</option>
+                    <option value="Class-10">12</option>
+                  </select><br><br>
 
-                <tr>
-                    <td class="text-center">Lower Nursery</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
+                  
 
-                
+                  <!--Section Selector-->
+                  <label class="py-3 text-light" for="class">Student Section</label><br>
+                <select name="class" class="px-1 student_section StudentClass" id="class">
+                    <option class="sec_a" value="Lower Nursery">A</option>
+                    <option class="sec_b" value="Upper Nursery">Science</option>
+                    <option class="sec_c" value="KG">Commerce</option>
+                    
+                  </select><br><br>
 
-                <tr>
-                    <td class="text-center">Upper Nursery</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-1</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-2</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-3</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-4</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-5</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-6</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-7</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-8</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-9</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-10</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-11 ( Science )</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-11 ( Commerce )</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-12 ( Science )</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                <tr>
-                    <td class="text-center">Class-12 ( Commerce )</td>
-                    <td class="text-center not_upload">Upload</td>
-                    <td class="text-center not_view">View</td>
-                    <td class="text-center not_cancel">Cancel</td>
-                </tr>
-
-                
-            </table>
+                  <section class="d-flex file_upload_sec" style="gap: 5px;">
+                    <img src="./img/file-upload.png" width="30px"/>
+                    <button type="submit">Upload File</button>
+                  </section>
+             </form>
+            <!--Notice Form Upload Section End-->
         </div>
 
         <!--Inner Section End-->

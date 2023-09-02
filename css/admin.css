@@ -16,6 +16,8 @@ body {
   /*Add_student Section css Style Start*/
   /*Add_student Section css Style End*/
   /*********NOTIFICATION SECTION START********/
+  /******Notice Add Section Style Satrt*******/
+  /*****Notice Add Section End******/
   /********NOTIFICATION SECTION END**********/
 }
 .mani-cont .left_sec {
@@ -246,6 +248,31 @@ body {
   border: 4px solid #fff;
   outline: none;
 }
+.mani-cont .notice_upForm {
+  width: 100%;
+  height: auto;
+}
+.mani-cont .notice_upForm select {
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.mani-cont .notice_upForm .file_upload_sec {
+  width: 150px;
+  cursor: pointer;
+  align-items: baseline;
+}
+.mani-cont .notice_upForm .file_upload_sec button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(95, 95, 95);
+  color: #fff;
+  font-weight: 600;
+}
 .mani-cont .notice_table {
   border: none;
   outline: none;
@@ -263,18 +290,34 @@ body {
   cursor: pointer;
   border-radius: 6px;
 }
+.mani-cont .notice_table .not_upload section {
+  padding: 2px;
+  gap: 9px;
+}
+.mani-cont .notice_table .not_upload section img {
+  width: 20px;
+}
 .mani-cont .notice_table .not_view {
   width: 200px;
   background-color: rgb(58, 58, 58);
-  font-weight: 700;
   cursor: pointer;
   border-radius: 6px;
 }
+.mani-cont .notice_table .not_view img {
+  width: 20px;
+}
 .mani-cont .notice_table .not_cancel {
   width: 200px;
-  background-color: rgb(253, 69, 69);
   font-weight: 700;
+}
+.mani-cont .notice_table .not_cancel .delet_btn {
   cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(253, 69, 69);
+  color: #fff;
   border-radius: 6px;
 }
 .mani-cont .notice_table td {
@@ -449,6 +492,25 @@ body {
 
 /*Responsive*/
 @media (max-width: 999px) {
+  tr {
+    font-size: 13px;
+  }
+  .notice_sec {
+    flex-direction: column;
+  }
+  .mani-cont .notice_table .not_cancel .delet_btn {
+    cursor: pointer;
+    width: 54px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(253, 69, 69);
+    color: #fff;
+    border-radius: 6px;
+  }
+  .not_upload section {
+    flex-direction: column;
+  }
   .signin_cont form {
     width: 90%;
     height: auto;

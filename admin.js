@@ -133,7 +133,18 @@ $( document ).ready(function(e) {
   /*Student Image Upload Function End*/
 
 
+  /* Notice View Function Start*/
 
+  let Notice = document.querySelector("#notice");
+  //  let DeleteBtn = document.getElementById("delete");
+
+  $(".delete_Btn").click( function(){
+     // Notice.parentNode.removeChild(td);
+      Notice.css("display", "none");
+  });
+
+
+   /*Notice View Function End */       
 
 
  
@@ -456,3 +467,4 @@ $( document ).ready(function(e) {
 
 
        /* User Image Upload Function End*/
+
